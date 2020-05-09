@@ -1,0 +1,105 @@
+#include "stdafx.h"
+#include "monsterBase.h"
+
+
+monsterBase::monsterBase()
+{
+}
+
+
+monsterBase::~monsterBase()
+{
+}
+
+
+string monsterBase::GetMonsterName()
+{
+	return _monsterName;
+}
+int monsterBase::GetMonsterMaxHp()
+{
+	return _monsterMaxHp;
+}
+int monsterBase::GetMonsterHp()
+{
+	return _monsterHp;
+}
+int monsterBase::GetMonsterAtk()
+{
+	return _monsterAtk;
+}
+int monsterBase::GetMonsterExp()
+{
+	return _monsterExp;
+}
+int monsterBase::GetMonsterMoney()
+{
+	return _monsterMoney;
+}
+int monsterBase::GetMonsterSeed()
+{
+	return _monsterSeed;
+}
+void monsterBase::SetMonsterName(string name)
+{
+	_monsterName = name;
+}
+void monsterBase::SetMonsterMaxHp(int maxhp)
+{
+	_monsterMaxHp = maxhp;
+}
+void monsterBase::SetMonsterHp()
+{
+	_monsterHp = _monsterMaxHp;
+}
+void monsterBase::SetMonsterAtk(int atk)
+{
+	_monsterAtk = atk;
+}
+void monsterBase::SetMonsterExp(int exp)
+{
+	_monsterExp = exp;
+}
+void monsterBase::SetMonsterMoney(int money)
+{
+	_monsterMoney = money;
+}
+void monsterBase::SetMonsterSeed(int seed)
+{
+	_monsterSeed = seed;
+}
+
+void monsterBase::MonsterDefeat2()
+{
+	SetColor(9, 15);
+wildboar
+	cout << "÷　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　÷" << endl;	// 9
+	cout << "÷　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　÷" << endl;	// 10
+	cout << "÷　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　÷" << endl;	// 11
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;	// 12
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;	// 13
+	cout << "＝　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＝" << endl;	// 14
+}
+void monsterBase::MonsterGetDamaged(int dmg)
+{
+	_monsterHp = _monsterHp - dmg;
+}
+
+void monsterBase::SetColor(int color, int bgcolor)
+{
+	bgcolor &= 0xf;
+	color &= 0xf;
+
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color | (bgcolor << 4));
+
+void wildboar::MonsterNormal();
+void wildboar::MonsterAtk();
+void wildboar::MonsterGetDmg1();
+void wildboar::MonsterGetDmg2();
+void wildboar::MonsterGetDmg3();
+void wildboar::MonsterGetDmg4();
+void wildboar::MonsterGetDmg5();
+void wildboar::MonsterDefeat1();
+
+
+}

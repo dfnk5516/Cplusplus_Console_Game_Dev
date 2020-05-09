@@ -1,0 +1,412 @@
+#include "stdafx.h"
+#include "wildboar.h"
+
+
+wildboar::wildboar()
+{
+	SetMonsterName("¸äµÅÁö");
+	SetMonsterMaxHp(rand() % 51 + 380);
+	SetMonsterAtk(rand() % 31 + 180);
+	SetMonsterMoney(rand() % 501 + 3500);
+	SetMonsterExp(rand() % 51 + 100);
+	SetMonsterSeed(rand() % 95);
+
+	SetMonsterHp();
+}
+
+
+wildboar::~wildboar()
+{
+}
+
+void monsterBase::MonsterNormal()
+{
+	if (_monsterName == "¿ø¼þÀÌ")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¹ÚÁã")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡á¡á¡á¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "µ¶»ç")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¸äµÅÁö")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+
+}
+
+void monsterBase::MonsterAtk()
+{
+	if (_monsterName == "¿ø¼þÀÌ")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¹ÚÁã")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡á¡¡¡¡¡¡¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "µ¶»ç")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡¡¡¡¡á¡¡¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡á¡á¡á¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¸äµÅÁö")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡á¡á¡¡¡á¡¡¡á¡¡¡á¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡á¡á¡¡¡á¡¡¡á¡¡¡á¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+}
+
+void monsterBase::MonsterGetDmg1()
+{
+	if (_monsterName == "¿ø¼þÀÌ")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¹ÚÁã")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "µ¶»ç")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡¡¡¡¡á¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¸äµÅÁö")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+
+}
+
+void monsterBase::MonsterGetDmg2()
+{
+	if (_monsterName == "¿ø¼þÀÌ")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+
+	}
+	else if (_monsterName == "¹ÚÁã")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "µ¶»ç")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡¡¡¡¡á¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¸äµÅÁö")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+
+}
+
+void monsterBase::MonsterGetDmg3()
+{
+	if (_monsterName == "¿ø¼þÀÌ")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¹ÚÁã")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "µ¶»ç")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡¡¡¡¡á¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¸äµÅÁö")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(12, 15); cout << "¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+}
+
+void monsterBase::MonsterGetDmg4()
+{
+	if (_monsterName == "¿ø¼þÀÌ")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡¡¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¹ÚÁã")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "µ¶»ç")
+	{
+		SetColor(9, 15);
+
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡¡¡¡¡á¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¸äµÅÁö")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡á¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+
+}
+
+void monsterBase::MonsterGetDmg5()
+{
+	if (_monsterName == "¿ø¼þÀÌ")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¹ÚÁã")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "µ¶»ç")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡¡¡¡¡á¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¸äµÅÁö")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡á¡á¡á¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+
+}
+
+
+void monsterBase::MonsterDefeat1()
+{
+	if (_monsterName == "¿ø¼þÀÌ")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¹ÚÁã")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡¡¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "µ¶»ç")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡á¡á¡¡¡¡¡á¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+	else if (_monsterName == "¸äµÅÁö")
+	{
+		SetColor(9, 15);
+
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 9
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 10
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡á¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 11
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡á¡á¡á¡á¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 12
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡á¡á¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 13
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 14
+	}
+}

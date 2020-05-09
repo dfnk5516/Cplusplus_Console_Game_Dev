@@ -1,0 +1,98 @@
+#include "stdafx.h"
+#include "mainGame.h"
+mainGame *mg = new mainGame;
+
+void Music();
+void AutoScreen();
+void EffectSound();
+void Seed();
+void Seed0();
+void Seed1();
+void Seed2();
+void Seed3();
+void Seed4();
+void Seed5();
+void Seed6();
+void Seed7();
+void Seed8();
+
+
+int main()
+{
+	auto screen = async(AutoScreen);
+	auto music = async(Music);
+	auto effectSound = async(EffectSound);
+	Seed();
+
+	mg->Game();
+	system("pause");
+
+	delete mg;
+	return 0;
+}
+
+
+
+
+void Music()
+{
+	mg->Music();
+}
+void AutoScreen()
+{
+	mg->AutoScreen();
+}
+void EffectSound()
+{
+	mg->EffectSound();
+}
+void Seed0()
+{
+	mg->Seed0();
+}
+void Seed1()
+{
+	mg->Seed1();
+}
+void Seed2()
+{
+	mg->Seed2();
+}
+void Seed3()
+{
+	mg->Seed3();
+}
+void Seed4()
+{
+	mg->Seed4();
+}
+void Seed5()
+{
+	mg->Seed5();
+}
+void Seed6()
+{
+	mg->Seed6();
+}
+void Seed7()
+{
+	mg->Seed7();
+}
+void Seed8()
+{
+	mg->Seed8();
+}
+
+void Seed()
+{
+	auto seed0 = async(Seed0);
+	auto seed1 = async(Seed1);
+	auto seed2 = async(Seed2);
+	auto seed3 = async(Seed3);
+	auto seed4 = async(Seed4);
+	auto seed5 = async(Seed5);
+	auto seed6 = async(Seed6);
+	auto seed7 = async(Seed7);
+	auto seed8 = async(Seed8);
+}
+

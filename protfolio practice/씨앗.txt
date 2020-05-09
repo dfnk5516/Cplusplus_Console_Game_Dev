@@ -1,0 +1,181 @@
+void mainGame::Seed0()
+{	
+	while (b_game == true)
+	{
+		if (b_seed[0]== true)
+		{
+			for(int i = 0; i < 300; ++i)
+  			{
+				this_thread::sleep_for(std::chrono::seconds(1));
+			}
+			_seed[0] = 1;
+			b_seed[0] = false;
+		}
+	}
+}
+void mainGame::Seed1()
+{	
+	while (b_game == true)
+	{
+		if (b_seed[1] == true)
+		{
+			for(int i = 0; i < 300; ++i)
+  			{
+				this_thread::sleep_for(std::chrono::seconds(1));
+			}
+			_seed[1] = 1;
+			b_seed[1] = false;
+		}
+	}
+}
+void mainGame::Seed2()
+{	
+	while (b_game == true)
+	{
+		if (b_seed[2] == true)
+		{
+			for(int i = 0; i < 300; ++i)
+  			{
+				this_thread::sleep_for(std::chrono::seconds(1));
+			}
+			_seed[2] = 1;
+			b_seed[2] = false;
+		}
+	}
+}
+
+void mainGame::Seed3()
+{	
+	while (b_game == true)
+	{
+		if (b_seed[3] == true)
+		{
+			for(int i = 0; i < 300; ++i)
+  			{
+				this_thread::sleep_for(std::chrono::seconds(1));
+			}
+			_seed[3] = 1;
+			b_seed[3] = false;
+		}
+	}
+}
+
+void mainGame::Seed4()
+{	
+	while (b_game == true)
+	{
+		if (b_seed[4] == true)
+		{
+			for(int i = 0; i < 300; ++i)
+  			{
+				this_thread::sleep_for(std::chrono::seconds(1));
+			}
+			_seed[4] = 1;
+			b_seed[4] = false;
+		}
+	}
+}
+void mainGame::Seed5()
+{	
+	while (b_game == true)
+	{
+		if (b_seed[5] == true)
+		{
+			for(int i = 0; i < 300; ++i)
+  			{
+				this_thread::sleep_for(std::chrono::seconds(1));
+			}
+			_seed[5] = 1;
+			b_seed[5] = false;
+		}
+	}
+}
+void mainGame::Seed6()
+{	
+	while (b_game == true)
+	{
+		if (b_seed[6] == true)
+		{
+			for(int i = 0; i < 300; ++i)
+  			{
+				this_thread::sleep_for(std::chrono::seconds(1));
+			}
+			_seed[6] = 1;
+			b_seed[6] = false;
+		}
+	}
+}
+void mainGame::Seed7()
+{	
+	while (b_game == true)
+	{
+		if (b_seed[7] == true)
+		{
+			for(int i = 0; i < 300; ++i)
+  			{
+				this_thread::sleep_for(std::chrono::seconds(1));
+			}
+			_seed[7] = 1;
+			b_seed[7] = false;
+		}
+	}
+}
+void mainGame::Seed8()
+{	
+	while (b_game == true)
+	{
+		if (b_seed[8] == true)
+		{
+			for(int i = 0; i < 300; ++i)
+  			{
+				this_thread::sleep_for(std::chrono::seconds(1));
+			}
+			_seed[8] = 1;
+			b_seed[8] = false;
+		}
+	}
+}
+
+
+
+
+////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+	while (b_game == true)
+	{
+		if (b_waterfall == true)
+		{
+			mciSendString(TEXT("play waterfall.WAV"), NULL, 0, NULL);
+			b_waterfall = false;
+		}
+		this_thread::sleep_until(start + (i + 1)*std::chrono::milliseconds(1000));
+	}
+	while (b_game == true)
+	{
+		if (b_waterfall == true)
+		{
+			mciSendString(TEXT("play waterfall.WAV"), NULL, 0, NULL);
+			b_waterfall = false;
+		}
+		this_thread::sleep_until(start + (i + 1)*std::chrono::milliseconds(1000));
+	}
+	while (b_game == true)
+	{
+		if (b_waterfall == true)
+		{
+			mciSendString(TEXT("play waterfall.WAV"), NULL, 0, NULL);
+			b_waterfall = false;
+		}
+		this_thread::sleep_until(start + (i + 1)*std::chrono::milliseconds(1000));
+	}

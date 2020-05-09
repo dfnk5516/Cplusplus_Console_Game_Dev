@@ -1,0 +1,682 @@
+void mainGame::CharacterScreen()
+{
+	gotoxy(0, 14);
+	SetColor(9, 15);
+
+	switch (_charactercheck)
+	{
+	case 1:
+	{
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 15
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 16
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 17
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 18
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 19
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 20
+	}
+	break;
+	case 2:
+	{
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 15
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 16
+		cout << "¡à"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡à" << endl;	// 17
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡¡¡á¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 18
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡"; SetColor(14, 15); cout << "¡á¡¡¡á¡¡¡¡¡¡¡¡"; SetColor(0, 15); cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 19
+		cout << "¡á"; SetColor(0, 15); cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"; SetColor(9, 15); cout << "¡á" << endl;	// 20
+	}
+	break;
+	case 3:
+	{
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 15
+		cout << "¡à¡¡¡¡¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 16
+		cout << "¡à¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 17
+		cout << "¡á¡¡¡¡¡á¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 18
+		cout << "¡á¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 19
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 20
+	}
+	break;
+	case 4:
+	{
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 15
+		cout << "¡à¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 16
+		cout << "¡à¡¡¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 17
+		cout << "¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 18
+		cout << "¡á¡á¡¡¡á¡¡¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 19
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 20//Ä³¸¯
+	}
+	break;
+	case 5:
+	{
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 15
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 16
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 17
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 18
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 19
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 20
+	}
+	break;
+	}
+}
+
+void mainGame::SkillScreen(monsterBase* _mob1, monsterBase* _mob2)
+{
+	gotoxy(0, 0);
+	SetColor(9, 15);
+
+	switch (_skillcheck)
+	{
+	case 1:
+	{
+		cout << "¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á" << endl;	// 1
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 2
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 3
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 4
+		cout << "¡à¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 5
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 6
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 7
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 8//±â¼ú
+	}
+	break;
+	case 2:
+	{
+		cout << "¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á" << endl;	// 1
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 2
+		cout << "¡à¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 3
+		cout << "¡à¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 4
+		cout << "¡à¡¡¡á¡¡ºñ»ó°¢¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 5
+		cout << "¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 6
+		cout << "¡á¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 7
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 8//±â¼ú
+	}
+	break;
+	case 3:
+	{
+		cout << "¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á" << endl;	// 1
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 2
+		cout << "¡à¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 3
+		cout << "¡à¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 4
+		cout << "¡à¡¡¡á¡¡ÆøÀüÃà¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 5
+		cout << "¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 6
+		cout << "¡á¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 7
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 8//±â¼ú
+	}
+	break;
+	case 4:
+	{
+		cout << "¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á" << endl;	// 1
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 2
+		cout << "¡à¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 3
+		cout << "¡à¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 4
+		cout << "¡à¡¡¡á¡¡´ëÅ¸°Ý¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 5
+		cout << "¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 6
+		cout << "¡á¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 7
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 8//±â¼ú
+	}
+	break;
+	case 5:
+	{
+		cout << "¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á" << endl;	// 1
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 2
+		cout << "¡à¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 3
+		cout << "¡à¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 4
+		cout << "¡à¡¡¡á¡¡ÄèÁø°Ý¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 5
+		cout << "¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 6
+		cout << "¡á¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 7
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 8//±â¼ú
+	}
+	break;
+	case 6:
+	{
+		cout << "¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á" << endl;	// 1
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 2
+		cout << "¡à¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 3
+		cout << "¡à¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 4
+		cout << "¡à¡¡¡á¡¡µµ¡¡ÁÖ¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡à" << endl;	// 5
+		cout << "¡á¡¡¡á¡¡¡¡¡¡¡¡¡¡¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 6
+		cout << "¡á¡¡¡á¡á¡á¡á¡á¡á¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 7
+		cout << "¡á¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡á" << endl;	// 8//±â¼ú
+	}
+	break;
+	case 7:
+	{
+		_mob1->MonsterSkill();
+	}
+	break;
+	case 8:
+	{
+		_mob2->MonsterSkill();
+	}
+	break;
+	}
+}
+
+void mainGame::BattleInitializing1()
+{
+	_skillTemp = 0;
+	_skillcheck = 1;
+	_monster1statecheck = 1;
+	_charactercheck = 1;
+	_monster2statecheck = 1;
+	_battlecheck = 1;
+
+	b_battleMusic = true;
+
+	SetColor(15, 15);
+	BootScreen2();
+	gotoxy(0, 26);
+	SetColor(9, 15);
+	cout << "¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á¡á¡à¡à¡à¡á¡á" << endl;	// 27
+	SetColor(8, 8);
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+	cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+
+	int monster1 = 0;
+	monster1 = rand() % 16 + 1; // ¿ø¼þÀÌ 1 ~7 ¹ÚÁã 8 ~ 12 µ¶»ç 13 ~ 15 ¸äµÅÁö 16
+
+	if (monster1 < 8)
+	{
+		_monkey1 = new monkey;
+		monsterBase* _mob1 = _monkey1;
+		BattleInitializing2(_mob1);
+	}
+	else if (monster1 >= 8 && monster1 < 13)
+	{
+		_bat1 = new bat;
+		monsterBase* _mob1 = _bat1;
+		BattleInitializing2(_mob1);
+	}
+	else if (monster1 >= 13 && monster1 < 16)
+	{
+		_snake1 = new snake;
+		monsterBase* _mob1 = _snake1;
+		BattleInitializing2(_mob1);
+	}
+	else
+	{
+		_wildboar1 = new wildboar;
+		monsterBase* _mob1 = _wildboar1;
+		BattleInitializing2(_mob1);
+	}
+}
+
+
+void mainGame::BattleInitializing2(monsterBase* _mob1)
+{
+	int monster2 = 0;
+	monster2 = rand() % 16 + 1; //  ¿ø¼þÀÌ 1 ~7 ¹ÚÁã 8 ~ 12 µ¶»ç 13 ~ 15 ¸äµÅÁö 16
+
+	if (monster2 < 8)
+	{
+		_monkey2 = new monkey;
+		monsterBase* _mob2 = _monkey2;
+		BattleScreen(_mob1, _mob2);
+		BattleChoice(_mob1, _mob2);
+	}
+	else if (monster2 >= 8 && monster2 < 13)
+	{
+		_bat2 = new bat;
+		monsterBase* _mob2 = _bat2;
+		BattleScreen(_mob1, _mob2);
+		BattleChoice(_mob1, _mob2);
+	}
+	else if (monster2 >= 13 && monster2 < 16)
+	{
+		_snake2 = new snake;
+		monsterBase* _mob2 = _snake2;
+		BattleScreen(_mob1, _mob2);
+		BattleChoice(_mob1, _mob2);
+	}
+	else
+	{
+		_wildboar2 = new wildboar;
+		monsterBase* _mob2 = _wildboar2;
+		BattleScreen(_mob1, _mob2);
+		BattleChoice(_mob1, _mob2);
+	}
+}
+
+void mainGame::BattleScreen(monsterBase* _mob1, monsterBase* _mob2)
+{
+	SkillScreen(_mob1, _mob2); // _skillcheck
+				   //////////////////////////////////////////////////////
+
+	Monster1Screen(_mob1); // _monster1statecheck
+
+						   //////////////////////////////////////////////////////
+
+	CharacterScreen(); // _charactercheck
+
+					   //////////////////////////////////////////////////////
+
+	Monster2Screen(_mob2); // _monster2statecheck
+
+						   //////////////////////////////////////////////////////
+
+	BattleChoiceScreen(_mob1, _mob2); // _battlecheck
+}
+
+
+void mainGame::Monster1Screen(monsterBase* _mob1)
+{
+	gotoxy(0, 8);
+
+	switch (_monster1statecheck)
+	{
+	case 0:
+	{
+		_mob1->MonsterDefeat2(); // complete defeat
+	}
+	break;
+	case 1:
+	{
+		_mob1->MonsterNormal(); // normal
+	}
+	break;
+	case 2:
+	{
+		_mob1->MonsterAtk(); // monsteratack
+	}
+	break;
+	case 3:
+	{
+		_mob1->MonsterGetDmg1(); // ºñ»ó°¢
+	}
+	break;
+	case 4:
+	{
+		_mob1->MonsterGetDmg2(); // ÆøÀüÃà
+	}
+	break;
+	case 5:
+	{
+		_mob1->MonsterGetDmg4(); // ´ëÅ¸°Ý
+	}
+	break;
+	case 6:
+	{
+		_mob1->MonsterGetDmg5(); // ÄèÁø°Ý
+	}
+	break;
+	case 7:
+	{
+		_mob1->MonsterDefeat1(); // defeat previous
+	}
+	break;
+	}
+}
+
+void mainGame::Monster2Screen(monsterBase* _mob2)
+{
+	gotoxy(0, 20);
+
+	switch (_monster2statecheck)
+	{
+	case 0:
+	{
+		_mob2->MonsterDefeat2(); // complete defeat
+	}
+	break;
+	case 1:
+	{
+		_mob2->MonsterNormal(); // normal
+	}
+	break;
+	case 2:
+	{
+		_mob2->MonsterAtk(); // monsteratack
+	}
+	break;
+	case 3:
+	{
+		_mob2->MonsterGetDmg1(); // ºñ»ó°¢
+	}
+	break;
+	case 4:
+	{
+		_mob2->MonsterGetDmg3(); // ÆøÀüÃà
+	}
+	break;
+	case 5:
+	{
+		_mob2->MonsterGetDmg4(); // ´ëÅ¸°Ý
+	}
+	break;
+	case 6:
+	{
+		_mob2->MonsterGetDmg5(); // ÄèÁø°Ý
+	}
+	break;
+	case 7:
+	{
+		_mob2->MonsterDefeat1(); // defeat previous
+	}
+	break;
+	}
+}
+
+void mainGame::BattleChoiceScreen(monsterBase* _mob1, monsterBase* _mob2)
+{
+	gotoxy(0, 27);
+	SetColor(0, 8);
+
+	switch (_battlecheck)
+	{
+	case 1:
+	{
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¢º¡¡" << _character1stSkill << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character2ndSkill << "¡¡¡¡±â·Â¼Ò¸ð : "; 
+		if (_characterMp < _2ndSkillNeedMp)
+		{
+			SetColor(12, 8);
+		}
+		cout << _2ndSkillNeedMp << endl;
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÀÌÅÛ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡µµ¡¡ÁÖ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 2:
+	{
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character1stSkill << endl;
+		cout << "¡¡¡¡¡¡¢º¡¡" << _character2ndSkill << "¡¡¡¡±â·Â¼Ò¸ð : "; 
+		if (_characterMp < _2ndSkillNeedMp)
+		{
+			SetColor(12, 8);
+		}
+		cout << _2ndSkillNeedMp << endl;
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÀÌÅÛ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡µµ¡¡ÁÖ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37
+	}
+	break;
+	case 3:
+	{
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¢º¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character1stSkill << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character2ndSkill << "¡¡¡¡±â·Â¼Ò¸ð : "; 
+		if (_characterMp < _2ndSkillNeedMp)
+		{
+			SetColor(12, 8);
+		}
+		cout << _2ndSkillNeedMp << endl;
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÀÌÅÛ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡µµ¡¡ÁÖ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 4:
+	{
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¢º¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character1stSkill << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character2ndSkill << "¡¡¡¡±â·Â¼Ò¸ð : "; 
+		if (_characterMp < _2ndSkillNeedMp)
+		{
+			SetColor(12, 8);
+		}
+		cout << _2ndSkillNeedMp << endl;
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÀÌÅÛ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡µµ¡¡ÁÖ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 5:
+	{
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character1stSkill << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character2ndSkill << "¡¡¡¡±â·Â¼Ò¸ð : "; 
+		if (_characterMp < _2ndSkillNeedMp)
+		{
+			SetColor(12, 8);
+		}
+		cout << _2ndSkillNeedMp << endl;
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¢º¡¡¾ÆÀÌÅÛ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡µµ¡¡ÁÖ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 6:
+	{
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¢º¡¡¾à¡¡ÃÊ¡¡¡¡" << hb->GetHowMany() << " °³\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡HpÆ÷¼Ç¡¡¡¡" << po->GetHowMany() << " °³\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 7:
+	{
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¾à¡¡ÃÊ¡¡¡¡" << hb->GetHowMany() << " °³\n";
+		cout << "¡¡¡¡¡¡¢º¡¡HpÆ÷¼Ç¡¡¡¡" << po->GetHowMany() << " °³\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 8:
+	{
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¢º¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 9:
+	{
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character1stSkill << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _character2ndSkill << "¡¡¡¡±â·Â¼Ò¸ð : "; 
+		if (_characterMp < _2ndSkillNeedMp)
+		{
+			SetColor(12, 8);
+		}
+		cout << _2ndSkillNeedMp << endl;
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÀÌÅÛ\n";
+		cout << "¡¡¡¡¡¡¢º¡¡µµ¡¡ÁÖ\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 10:
+	{
+		gotoxy(0, 27);
+		SetColor(8, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+
+		gotoxy(0, 27);
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡°æÇèÄ¡" << _mob1->GetMonsterExp() << " È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 30
+		cout << "¡¡¡¡¡¡¡¡¡¡±Ý¡¡Àü" << _mob1->GetMonsterMoney() << " È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 11:
+	{
+		gotoxy(0, 27);
+		SetColor(8, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+
+		gotoxy(0, 27);
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡°æÇèÄ¡" << _mob1->GetMonsterExp() << " È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 30
+		cout << "¡¡¡¡¡¡¡¡¡¡±Ý¡¡Àü" << _mob1->GetMonsterMoney() << " È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¾àÃÊ¾¾ È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 12:
+	{
+		gotoxy(0, 27);
+		SetColor(8, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+
+
+		gotoxy(0, 27);
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡°æÇèÄ¡" << _mob2->GetMonsterExp() << " È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 30
+		cout << "¡¡¡¡¡¡¡¡¡¡±Ý¡¡Àü" << _mob2->GetMonsterMoney() << " È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 13:
+	{
+		gotoxy(0, 27);
+		SetColor(8, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+
+		gotoxy(0, 27);
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡°æÇèÄ¡" << _mob2->GetMonsterExp() << " È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 30
+		cout << "¡¡¡¡¡¡¡¡¡¡±Ý¡¡Àü" << _mob2->GetMonsterMoney() << " È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¾àÃÊ¾¾ È¹µæ!\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	case 14:
+	{
+		gotoxy(0, 27);
+		SetColor(8, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+
+
+		gotoxy(0, 27);
+		SetColor(0, 8);
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 28 ÀÌ¸§
+		cout << "¡¡¡¡¡¡¡¡¡¡¾ÆÅ¸È£¡¡¡¡Ã¼·Â : " << _characterHp << " / " << _characterMaxHp << "¡¡¡¡¡¡ ±â·Â : " << _characterMp << " / " << _characterMaxMp << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob1->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob1->GetMonsterHp() << " / " << _mob1->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡" << _mob2->GetMonsterName() << "¡¡¡¡Ã¼·Â : " << _mob2->GetMonsterHp() << " / " << _mob2->GetMonsterMaxHp() << endl;
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 32 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡\n";
+		cout << "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" << endl;	// 37 
+	}
+	break;
+	}
+}

@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  protfolio practice.cpp
+  potion.cpp
+  mainGame.cpp
+c:\users\최병찬\desktop\sga\포폴\protfolio practice\protfolio practice\maingame.cpp(13): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\최병찬\desktop\sga\포폴\protfolio practice\protfolio practice\maingame.cpp(14): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\최병찬\desktop\sga\포폴\protfolio practice\protfolio practice\maingame.cpp(49): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  itemBase.cpp
+  herb.cpp
+  코드를 생성하고 있습니다...
+  protfolio practice.vcxproj -> C:\Users\최병찬\Desktop\sga\포폴\protfolio practice\x64\Debug\protfolio practice.exe
+  protfolio practice.vcxproj -> C:\Users\최병찬\Desktop\sga\포폴\protfolio practice\x64\Debug\protfolio practice.pdb (Full PDB)
